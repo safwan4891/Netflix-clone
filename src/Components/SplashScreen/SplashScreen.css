@@ -1,0 +1,57 @@
+.splash-screen {
+  position: fixed; 
+  bottom: -50px;
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-14%); 
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column; 
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  text-align: center;
+  
+}
+
+.logo {
+  width: 250px; 
+  height: auto; 
+  animation: logo-animation 3s ease-in-out forwards;
+}
+
+@keyframes logo-animation {
+  0% {
+    width: 250px;
+    transform: scale(1.0);
+  }
+  50% {
+   
+    transform: scale(1.2);
+  }
+  100% {
+    width: 240px;
+    transform: scale(1);
+  }
+}
+
+.logo-text {
+  font-size: 28px; /* Larger font size for 'N' */
+  color: white;
+  padding-right: 79%;
+  font-family: Arial, sans-serif; /* Choose a font */
+  font-weight: bold; /* Make text bold */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  background-color: black; 
+}
+
